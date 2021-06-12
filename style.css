@@ -1,0 +1,390 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Common */
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.clear {
+    clear: both;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: 8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third {
+    width: calc(100%/3);
+}
+
+.col-half {
+    width: calc(100%/2);
+}
+
+.col-full {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.btn:hover {
+    color: black;
+    background-color: #ccc;
+}
+
+.pull-right {
+    float: right !important
+}
+
+.btn {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    margin-right: 16px;
+}
+
+
+/* Main */
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: white;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    display: block;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+    color: black;
+    background-color: #ccc;
+
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+#nav .subnav li {
+    width: 100%;
+}
+
+#nav .subnav a {
+    color: black;   
+   
+}
+
+#nav .nav-arrow-down {
+    font-size: 12px;
+}
+
+#header .search-btn:hover {
+    background-color: tomato;
+    cursor: pointer;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 16px;
+}
+
+#header .search-icon {
+    color: white;
+    line-height: 46px;
+    font-size: 30px;
+    
+}
+
+#slider {
+    position: relative;
+    height: 600px;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/japan.jpg') top center / cover no-repeat;
+
+}
+
+
+#slider .text-content {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    bottom: 44px;
+    width: 100%;
+    margin-bottom: 84px;
+}
+
+#slider .heading {
+    font-size: 60px;
+}
+
+#slider .text-description {
+    font-size: 30px;
+    margin-top: 24px;
+}
+
+#content {
+   
+}
+
+
+
+#content .content-section {
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 64px;
+    
+}
+
+#content .section-heading {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500px;
+    letter-spacing: 4px;
+    margin-bottom: 24px;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 24px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text {
+    margin-bottom: 24px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+#content .member-list {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#content .member-item {
+    float: left;
+    width: calc(100%/3);
+}
+
+#content .member-item img {
+    width: 204px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+#content .member-name {
+    font-size: 15px; 
+}
+
+/*TOUR SECTION*/
+.tour-section {
+    background-color: black;
+}
+
+.ticket-list {
+    background-color: white;
+    margin-top: 40px;
+}
+
+.ticket-list li {
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.ticket-list .sold-out {
+    background-color: red;
+    color:white;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.ticket-list .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-right: 14px;
+    margin-top: -3px;
+}
+
+/*places*/
+
+.places-list {
+    margin-top: 32px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-bottom: 32px;
+}
+
+.places-item {
+    float: left;
+
+    width: calc(100%/3);
+    padding: 8px;
+}
+
+.places-item img {
+    width: 100%;
+    display: block;
+
+}   
+
+.places-item img:hover {
+    opacity: 0.6;
+}
+
+.places-body {
+    padding: 16px;
+    background-color: white;
+    font-size: 15px;
+}
+
+.places-item .places-body .heading {
+    font-size: 15px;
+    font-weight: 600px;
+}
+
+.places-time {
+    margin-top: 15px;
+    color: #333;
+}
+
+.places-description {
+    margin-top: 15px;
+
+}
+
+
+
+
+/* Contact Form */
+
+.contact-content {
+    margin-bottom: 24px;
+}
+
+.contact-content .contact-info {
+    font-size: 18px;
+
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+
+}
+
+.contact-form .form-control {
+    padding: 12px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.map-section {
+    height: 600px;
+    background: url('/map.jpg') top center / cover no-repeat;
+    margin-top: 40px;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+    font-size: 36px;
+}
+
+#footer .social-list a{
+    text-decoration: none;
+    color: black;
+}
+
+#footer .social-list a:hover {
+    opacity: 0.3;
+}
