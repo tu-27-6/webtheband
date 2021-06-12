@@ -176,7 +176,7 @@ html {
     height: 600px;
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/./japan.jpg') top center / cover no-repeat;
+    background: url('./japan.jpg') top center / cover no-repeat;
 
 }
 
@@ -370,7 +370,7 @@ html {
 
 .map-section {
     height: 600px;
-    background: url('/./map.jpg') top center / cover no-repeat;
+    background: url('./map.jpg') top center / cover no-repeat;
     margin-top: 40px;
 }
 
